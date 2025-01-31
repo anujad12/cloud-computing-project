@@ -1,0 +1,349 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font and background color for the entire page */
+body {
+    font-family: 75% georgia, sans-serif;;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*dahalEdge Logo Styling*/
+.img {
+    display:block;
+    margin-right: auto;
+    width: 35%;
+}
+/*nav bar styling */
+nav {
+    background-color: #57b9cd;
+    padding: 10px;
+}
+
+.navbar {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #83009437;
+}
+
+/*window styling*/
+.window {
+    text-align: center;
+    padding: 20px;
+    background-color: lightblue;
+    border: 1px solid darkblue;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: 75% georia, sans-serif;
+    font-size: 18px;
+}
+
+/*button styling*/
+.button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.primary{
+    background-color: rgb(121, 121, 237);
+    color: white;
+    border: none;
+}
+
+.primary:hover {
+    background-color: rgb(234, 197, 103);
+}
+
+.secondary{
+    background-color: rgb(243, 242, 242);
+    color:rgba(0, 0, 255, 0.676);
+    border: 1px solid (0,0255,0.676);
+}
+
+.secondary:hover {
+    background-color: #f0f0f0;
+}
+
+
+/*headings styling*/
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #a400b3d6;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    margin: 50px 0;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+h6 {
+    font-size: 0.70rem;
+    margin: 10px 0;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+
+a {
+    color: #65bcf77e;
+    text-decoration: blink ;
+    border-bottom: 1px dotted #65bcf77e;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+a:hover {
+    color: #6c009478;
+    border-bottom: 1px solid #004494;
+}
+
+/* Style for accordion */
+.accordion {
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #8aabac;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-family: 75% georgia, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.accordion:hover {
+    background-color: #ddd;
+}
+
+.accordion::after {
+    content: '\25BC'; 
+    text-align: center;
+    font-size: 14px;
+    transition: transform 0.3s ease; 
+}
+
+.highlight{
+    display: block;
+    font-size: 1.5rem;
+    text-align: left;
+    color: #0056b3;
+    font-weight: bold;
+    margin-bottom: 10px;
+   
+}
+
+.highlight::before {
+    content: "\2601"; 
+    color: #0056b3; 
+    font-family: arial, sans-serif;
+    font-size: 1.2rem;
+    margin-right: 8px; 
+    display:inline-block;
+}
+p:nth-child(odd){
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p:nth-child(even) {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#recommendations:checked + .accordion::after {
+    transform: rotate(180deg); /* Arrow points upward */
+}
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background-color: #f9f9f9;
+    padding: 0 15px;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+#recommendations:checked + .panel {
+    max-height: 1000px; 
+    opacity: 1;
+    padding: 15px;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #dba1f4;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #8e5393;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: rgb(144, 143, 143);
+    margin-top: 20px;
+}
+
+/* Style for Request Quote */
+h1 {
+    text-align: center;
+    color: #93c0f1;
+    margin-top: 50px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical; 
+    min-height: 150px; 
+}
+
+.contact-form button {
+    background-color: #93c0f1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #74a3d1; 
+}
+
+
+#char-count {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+/* Style for tables*/
+table {
+    width: 85%;
+    margin: 20px auto;
+    border: 2px solid #009688;
+    border-radius: 8px;
+    border-collapse: collapse; 
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid black; 
+    padding: 8px; 
+    text-align: center;
+}
+
+th {
+    font-weight: bolder;
+    background-color:#d9f4f8; 
+}
+
+/*style for our mission*/
+.mission {
+    padding: 20px;
+    margin: 20px auto;
+
+}
+
+.history {
+    padding: 20px;
+    margin: 20px auto;
+
+}
+
+.timeline {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*submission page*/
+.submission{
+    font-family: georgia, sans-serif;;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-top:150px;
+    text-align: center;
+    font-size: 50px;
+}
+
