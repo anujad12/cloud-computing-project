@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    <header>
+        <div class="img">
+        <img src="./assets/dahalEdgeCloudServicesLogo.png" alt="DahalEdgeLogo" style=" width: 150px; height: 100px;">
+        </div>
+    </header>
+ <nav role="navigation" aria-label="main menu">
+     <ul class="navbar">
+         <li><a href="./Home.html">Home</a></li>
+         <li><a href="./About Us.html">About</a></li>
+         <li><a href="./Pricing.html">Pricing</a></li>
+         <li><a href="./Quote.html">Request A Quote</a></li>
+         <li><a href="./References.html">References</a></li>
+
+     </ul>
+ </nav>
+ <table>
+    <h1>Cloud Migration Cost Comparison</h1>
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>On-Premises Costs</th>
+            <th>Cloud Costs</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Servers/Infrastructure</td>
+            <td>$15,000 per server (3-year period)</td>
+            <td>$840/year for AWS t3.large instance</td>
+        </tr>
+        <tr>
+            <td>Storage</td>
+            <td>$1,000/year (local storage)</td>
+            <td>$0.023 per GB/month (AWS S3)</td>
+        </tr>
+        <tr>
+            <td>IT Staff</td>
+            <td>$80,000/year</td>
+            <td>Reduced need with managed services</td>
+        </tr>
+        <tr>
+            <td>Migration</td>
+            <td>N/A</td>
+            <td>$5,000–$10,000 (one-time cost)</td>
+        </tr>
+        <tr>
+            <td>Backups/Monitoring</td>
+            <td>$1,500/year</td>
+            <td>~$500/year (AWS CloudWatch, Glacier)</td>
+        </tr>
+    </tbody>
+</table>
+<div class="pricing-container">
+    <div class="pricing-header">
+        <h1>Pricing Example</h1>
+    </div>
+    <div class="pricing-details">
+        <h2>Migration Job Details</h2>
+        <ul>
+            <li><strong>Backfill of data currently in the source:</strong> 600 GB</li>
+            <li><strong>Volume of changes in a month (CDC):</strong> 3,000 GB</li>
+            <li><strong>Destination:</strong> Cloud SQL for PostgreSQL</li>
+            <li><strong>Region:</strong> Iowa (us-central1)</li>
+        </ul>
+    </div>
+    <div class="pricing-calculation">
+        <h3>Pricing Calculation</h3>
+        <p><strong>Backfill charge:</strong></p>
+        <p>(Backfill size - 50 GB) * backfill price = (600 - 50) * $0.40 = <strong>$220.00</strong></p>
+        
+        <p><strong>CDC charge:</strong></p>
+        <p>(2,500 GB * $2.00/GB) + (500 GB * $1.50/GB) = $5,000.00 + $750.00 = <strong>$5,750.00</strong></p>
+        
+        <p><strong>Total Database Migration Service charge:</strong></p>
+        <p>Backfill charge + CDC charge = $220.00 + $5,750.00 = <strong>$5,970.00</strong></p>
+    </div>
+</div>
+</body>
+</html>
