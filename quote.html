@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    <header>
+        <div class="img">
+        <img src="./assets/dahalEdgeCloudServicesLogo.png" alt="DahalEdgeLogo" style=" width: 150px; height: 100px;">
+        </div>
+    </header>
+ <nav role="navigation" aria-label="main menu">
+     <ul class="navbar">
+        <li><a href="./Home.html">Home</a></li>
+         <li><a href="./About Us.html">About</a></li>
+         <li><a href="./Pricing.html">Pricing</a></li>
+         <li><a href="./Quote.html">Request A Quote</a></li>
+         <li><a href="./References.html">References</a></li>
+     </ul>
+ </nav>
+    <h1>Request a Personalized Quote</h1>
+    <main>
+        <form action="QuoteSubmission.html" method="get" class="contact-form">
+            <label for= "name"> First Name </label>
+            <input name="firstname" id ="firstname" required>
+
+            <label for= "name"> Last Name </label>
+            <input name="lastname" id ="lastname" required>
+            
+            <label for= "name"> Title </label>
+            <input name="title" id ="title" required>
+
+            <label for= "email"> Work Email </label>
+            <input name="email" id ="email" required>
+            
+            <label for= "Phone"> Work Phone </label>
+            <input name="Phone" id ="Phone" required>
+
+            <label for="message">Describe your business problem</label>
+            <textarea name="message" id="message" rows="5" maxlength="250" required></textarea>
+            
+            
+            <button type="submit">Request Quote</button>
+        </form>
+    </main>
+</body>
+</html>
